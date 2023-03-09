@@ -2,6 +2,10 @@ const http = require('http');
 const fs = require('fs');
 
 const server = http.createServer(function (request, response) {
+  if (request.url.includes('/contact?')) {
+    console.log(request.method);
+    response.end();
+  }
   switch (request.url) {
     case "/":
       request.url = "index.html"
@@ -18,6 +22,7 @@ const server = http.createServer(function (request, response) {
     case "/inquiry":
       request.url = "inquiry.html"
       break;
+      
 
     default:
       break;
