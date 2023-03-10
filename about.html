@@ -4,27 +4,49 @@
 <head>
     <title>About</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/help">Help</a></li>
-            <li><a href="/inquiry">Inquiry</a></li>
-            <li><a class="active" href="/about">About</a></li>
-        </ul>
-    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="/">Home</a>
+        <a href="/contact">Contact</a>
+        <a  href="/help">Help</a>
+        <a href="/inquiry">Inquiry</a>
+        <a class="active" href="/about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <div class="about-me">
         <div class="about-me-text">
             <h2>About Me</h2>
-            <p>I am a web developer and I love to create websites. I am a very good developer and I am always
-                looking for new projects. I am a very good developer and I am always looking for new projects.</p>
+            <p style="text-align: justify; margin: 4px; margin-right: 2rem;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Diam quis enim lobortis scelerisque fermentum dui. At in tellus integer feugiat
+                scelerisque varius morbi. Lacinia quis vel eros donec ac odio tempor. Quis eleifend quam adipiscing
+                vitae proin. Curabitur gravida arcu ac tortor dignissim convallis. Mollis aliquam ut porttitor leo a
+                diam sollicitudin. Tristique senectus et netus et malesuada fames ac. Dictum sit amet justo donec enim
+                diam vulputate ut pharetra. Nam at lectus urna duis convallis convallis tellus id interdum. Libero justo
+                laoreet sit amet cursus. Sed odio morbi quis commodo odio aenean. Nisi porta lorem mollis aliquam ut
+                porttitor leo. Congue quisque egestas diam in arcu. Fringilla ut morbi tincidunt augue interdum velit
+                euismod. Enim facilisis gravida neque convallis. Neque ornare aenean euismod elementum nisi. Donec ac
+                odio tempor orci. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</p>
         </div>
         <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
             alt="me">
     </div>
 </body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
 </html>
